@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
 * {
+    font-family: 'Libre Caslon Display', serif;
     margin: 0;
     padding: 0;
 }
@@ -38,11 +40,13 @@ footer {
     margin-right: auto;
     top: calc(100% - 32px);
 }
-.label-button img{
+
+.label-button img {
     height: 32px;
     vertical-align: bottom;
 
 }
+
 .label-button {
     display: inline-block;
     background-color: orange;
@@ -50,13 +54,16 @@ footer {
     padding-right: 14px;
     margin-top: 14px;
 }
-.label-button:hover{
+
+.label-button:hover {
     background-color: crimson;
 }
-.label-button span{
+
+.label-button span {
     line-height: 32px;
 }
-.nav-button{
+
+.nav-button {
     background-color: black;
     color: white;
     border-radius: 8px;
@@ -64,35 +71,56 @@ footer {
     width: 98px;
     padding-left: 20px;
 }
-.content img{
+
+.content img {
     width: 200px;
     position: relative;
     animation-name: rabL;
     animation-iteration-count: infinite;
     animation-duration: 3s;
 }
+
 @keyframes rabL {
-    0% {left: -200px;}
-    100%{left: 100%;}
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 100%;
+    }
 }
+
 @media screen and (max-width: 600px) {
     .nav-button {
         display: none;
     }
-    .content img{
+
+    .content img {
         animation-name: rabL;
     }
-    .content{
+
+    .content {
         width: 100%;
+    }
+    #run{
+        display: none;
     }
 }
 
 @keyframes rabR {
-    0% {left: 100%;}
-    100%{left: -200px;}
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -200px;
+    }
 }
-@media screen and (min-width: 600px){
-.content img{
-    animation-name: rabR;
+
+@media screen and (min-width: 600px) {
+    .content img {
+        animation-name: rabR;
+    }
 }
+
+#rab {
+    display: none;
 }

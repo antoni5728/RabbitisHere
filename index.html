@@ -8,17 +8,16 @@
 </head>
 <body>
 <nav>
-    <label class="label-button">
+    <label class="label-button" onclick="clickButton()">
         <img src="rab.png">
-        <span>Run</span>
+        <span id="run">Run</span>
     </label>
-    <select class="nav-button">
-        <option>State 1</option>
-        <option>State 2</option>
+    <select id="sel" class="nav-button" onchange="pickSelect()">
+        <option value="1">State 1</option>
+        <option value="2">State 2</option>
     </select>
 </nav>
-
-<div class="content"><img src="rab.png"></div>
+<div class="content"><img id="rab" src="rab.png"></div>
 <footer>Antoni Jałyński</footer>
 <script type="text/javascript" src="main.js"></script>
 </body>
